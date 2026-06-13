@@ -8,6 +8,10 @@
 
 /* shandcn theme: --preset b6t6EMzZY */
 
+html {
+	scroll-padding-top: 4rem; /* matches h-12 = 48px */
+}
+
 :root {
 	--background: oklch(1 0 0);
 

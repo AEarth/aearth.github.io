@@ -37,32 +37,32 @@
 		navMain: [
 			{
 				title: 'Full Stack',
-				url: '#',
+				url: '/full-stack',
 				icon: SquareTerminalIcon,
 				isActive: false,
 				items: [
 					{
 						title: 'teramap.org',
-						url: '#'
+						url: '/full-stack#teramap'
 					},
 					{
 						title: 'share-more.org',
-						url: '#'
+						url: '/full-stack#share-more'
 					},
 					{
 						title: 'stormwater',
-						url: '#'
+						url: '/full-stack#stormwater'
 					}
 				]
 			},
 			{
 				title: 'Geospatial',
-				url: '#',
+				url: '/geospatial',
 				icon: BotIcon,
 				items: [
 					{
 						title: 'Watershed Characterization Tool',
-						url: '#'
+						url: '/geospatial'
 					},
 					{
 						title: 'Enhanced Floodplain Maps',
@@ -86,7 +86,7 @@
 			},
 			{
 				title: 'Community',
-				url: '#',
+				url: '/community',
 				icon: Settings2Icon,
 				items: [
 					{

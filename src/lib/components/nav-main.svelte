@@ -2,6 +2,8 @@
 	import * as Collapsible from "$lib/components/ui/collapsible/index.js";
 	import * as Sidebar from "$lib/components/ui/sidebar/index.js";
 	import ChevronRightIcon from "@lucide/svelte/icons/chevron-right";
+	import { resolve } from '$app/paths';
+
 
 	let {
 		items,
@@ -34,7 +36,7 @@
 									{#if item.icon}
 										<item.icon />
 									{/if}
-									<span>{item.title}</span>
+									<span><a href={item.url}>{item.title}</a></span>
 									<ChevronRightIcon
 										class="ms-auto transition-transform duration-200 group-data-[state=open]/collapsible:rotate-90"
 									/>
