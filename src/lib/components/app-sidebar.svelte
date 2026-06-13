@@ -82,24 +82,7 @@
 				title: 'Resume',
 				url: '#',
 				icon: BookOpenIcon,
-				items: [
-					{
-						title: 'Introduction',
-						url: '#'
-					},
-					{
-						title: 'Get Started',
-						url: '#'
-					},
-					{
-						title: 'Tutorials',
-						url: '#'
-					},
-					{
-						title: 'Changelog',
-						url: '#'
-					}
-				]
+
 			},
 			{
 				title: 'Community',
@@ -107,19 +90,15 @@
 				icon: Settings2Icon,
 				items: [
 					{
-						title: 'General',
+						title: 'Createspace',
 						url: '#'
 					},
 					{
-						title: 'Team',
+						title: 'Carverponics',
 						url: '#'
 					},
 					{
-						title: 'Billing',
-						url: '#'
-					},
-					{
-						title: 'Limits',
+						title: 'Food not Bombs',
 						url: '#'
 					}
 				]
