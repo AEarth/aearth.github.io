@@ -13,6 +13,9 @@ const config = {
 		paths: {
 			// For GitHub Pages project sites, set this to '/<repo-name>' (e.g. '/aearth_githubio').
 			base: ''
+		},
+		alias: {
+			'@/*': './path/to/lib/*'
 		}
 	}
 };
