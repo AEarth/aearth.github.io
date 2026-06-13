@@ -19,9 +19,9 @@
 		},
 		teams: [
 			{
-				name: 'Acme Inc',
+				name: 'Arthur Kay',
 				logo: GalleryVerticalEndIcon,
-				plan: 'Enterprise'
+				plan: 'Portfolio'
 			},
 			{
 				name: 'Acme Corp.',
@@ -36,46 +36,50 @@
 		],
 		navMain: [
 			{
-				title: 'Playground',
+				title: 'Full Stack',
 				url: '#',
 				icon: SquareTerminalIcon,
-				isActive: true,
+				isActive: false,
 				items: [
 					{
-						title: 'History',
+						title: 'teramap.org',
 						url: '#'
 					},
 					{
-						title: 'Starred',
+						title: 'share-more.org',
 						url: '#'
 					},
 					{
-						title: 'Settings',
+						title: 'stormwater',
 						url: '#'
 					}
 				]
 			},
 			{
-				title: 'Models',
+				title: 'Geospatial',
 				url: '#',
 				icon: BotIcon,
 				items: [
 					{
-						title: 'Genesis',
+						title: 'Watershed Characterization Tool',
 						url: '#'
 					},
 					{
-						title: 'Explorer',
+						title: 'Enhanced Floodplain Maps',
 						url: '#'
 					},
 					{
-						title: 'Quantum',
+						title: 'VA Flood Risk Info System',
+						url: '#'
+					},
+					{
+						title: 'Coastal Resilience Web Explorer',
 						url: '#'
 					}
 				]
 			},
 			{
-				title: 'Documentation',
+				title: 'Resume',
 				url: '#',
 				icon: BookOpenIcon,
 				items: [
@@ -98,7 +102,7 @@
 				]
 			},
 			{
-				title: 'Settings',
+				title: 'Community',
 				url: '#',
 				icon: Settings2Icon,
 				items: [
@@ -121,23 +125,6 @@
 				]
 			}
 		],
-		projects: [
-			{
-				name: 'Design Engineering',
-				url: '#',
-				icon: FrameIcon
-			},
-			{
-				name: 'Sales & Marketing',
-				url: '#',
-				icon: ChartPieIcon
-			},
-			{
-				name: 'Travel',
-				url: '#',
-				icon: MapIcon
-			}
-		]
 	};
 </script>
 
