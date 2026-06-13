@@ -16,6 +16,9 @@ const config = {
 		},
 		alias: {
 			'@/*': './path/to/lib/*'
+		},
+		prerender: {
+			handleMissingId: 'warn'
 		}
 	}
 };
