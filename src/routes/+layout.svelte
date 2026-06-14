@@ -51,39 +51,42 @@ $inspect(breadcrumbs[0]?.href);
 
 <ModeWatcher />
 
-
-
 <Sidebar.Provider>
-    <AppSidebar />
-    <Sidebar.Inset>
-        <header
-            class="sticky top-0 z-30 bg-card/60 h-12 shrink-0 flex shrink-0 items-center justify-between gap-2 px-4 transition-[width,height] ease-linear group-has-data-[collapsible=icon]/sidebar-wrapper:h-12"
-        >
-            <div class="flex items-center gap-2">
-                <Sidebar.Trigger class="-ms-1" />
-                <Separator orientation="vertical" class="me-2 data-[orientation=vertical]:h-4" />
-                <Breadcrumb.Root>
-                    <Breadcrumb.List>
-                        <Breadcrumb.Item class="hidden md:block">
-                            <Breadcrumb.Link href="##">{breadcrumbs[0]?.label}</Breadcrumb.Link>
-                        </Breadcrumb.Item>
+	<AppSidebar />
+	<!-- Added flex, flex-col, and h-screen to fill the viewport -->
+	<Sidebar.Inset class="flex h-screen flex-col overflow-hidden">
+		<header
+			class="sticky top-0 z-30 flex h-12 shrink-0 items-center justify-between gap-2 bg-card/60 px-4 transition-[width,height] ease-linear group-has-data-[collapsible=icon]/sidebar-wrapper:h-12"
+		>
+			<div class="flex items-center gap-2">
+				<Sidebar.Trigger class="-ms-1" />
+				<Separator orientation="vertical" class="me-2 data-[orientation=vertical]:h-4" />
+				<Breadcrumb.Root>
+					<Breadcrumb.List>
+						<Breadcrumb.Item class="hidden md:block">
+							<Breadcrumb.Link href="##">{breadcrumbs[0]?.label}</Breadcrumb.Link>
+						</Breadcrumb.Item>
 						{#if breadcrumbs[1]}
-                        <Breadcrumb.Separator class="hidden md:block" />
-                        <Breadcrumb.Item>
-                            <Breadcrumb.Page>{breadcrumbs[1]?.label}</Breadcrumb.Page>
-                        </Breadcrumb.Item>
+							<Breadcrumb.Separator class="hidden md:block" />
+							<Breadcrumb.Item>
+								<Breadcrumb.Page>{breadcrumbs[1]?.label}</Breadcrumb.Page>
+							</Breadcrumb.Item>
 						{/if}
-                    </Breadcrumb.List>
-                </Breadcrumb.Root>
-            </div>
+					</Breadcrumb.List>
+				</Breadcrumb.Root>
+			</div>
 
-            <ModeToggle />
-        </header>
-		<div class="py-2"> 
-			<h1>{breadcrumbs.label}</h1>
-		</div>
+			<ModeToggle />
+		</header>
 
+		<!-- Keep breadcrumb title but ensure it doesn't push content off screen
+		<div class="shrink-0 px-4 py-2">
+			<h1 class="text-xl font-bold">{breadcrumbs[breadcrumbs.length - 1]?.label || 'Home'}</h1>
+		</div> -->
 
-        {@render children()}
-    </Sidebar.Inset>
+		<!-- Use flex-1 to let the page content fill the remaining space -->
+		<main class="flex-1 overflow-hidden">
+			{@render children()}
+		</main>
+	</Sidebar.Inset>
 </Sidebar.Provider>

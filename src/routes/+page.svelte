@@ -1,12 +1,11 @@
-<div class="flex flex-1 flex-col gap-4 p-4 pt-0">
-	<div class="grid auto-rows-min gap-4 md:grid-cols-3">
-	<a href="/full-stack">
-		<div class="aspect-video rounded-xl bg-muted/50"></div>
-	</a>
-		<div class="aspect-video rounded-xl bg-muted/50"></div>
-		<div class="aspect-video rounded-xl bg-muted/50"></div>
+<div class="flex h-full flex-col gap-4 p-3 pt-4 md:p-4">
+	<!-- flex-[2] makes this box take up 2 portions -->
+	<a href="/full-stack" class="flex-[2] rounded-xl bg-muted/50"></a>
+
+	<!-- flex-1 makes this grid take up 1 portion -->
+	<div class="grid flex-1 grid-cols-3 gap-2 md:gap-4">
+		<a href="/geospatial" class="rounded-xl bg-muted/50"></a>
+		<a href="/resume" class="rounded-xl bg-muted/50"></a>
+		<a href="/community" class="rounded-xl bg-muted/50"></a>
 	</div>
-	<div class="min-h-screen flex-1 rounded-xl bg-muted/50 md:min-h-min"></div>
-
-
 </div>

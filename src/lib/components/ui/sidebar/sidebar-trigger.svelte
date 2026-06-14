@@ -1,11 +1,10 @@
 <script lang="ts">
-	import { Button } from "$lib/components/ui/button/index.js";
+	import { Button } from '$lib/components/ui/button/index.js';
 	import PanelLeftIcon from '@lucide/svelte/icons/panel-left';
-	import HomeIcon from "@lucide/svelte/icons/home";
-	import { cn } from "$lib/utils.js";
-	import type { ComponentProps } from "svelte";
-	import { useSidebar } from "./context.svelte.js";
-
+	import HomeIcon from '@lucide/svelte/icons/home';
+	import { cn } from '$lib/utils.js';
+	import type { ComponentProps } from 'svelte';
+	import { useSidebar } from './context.svelte.js';
 
 	let {
 		ref = $bindable(null),
@@ -19,16 +18,33 @@
 	const sidebar = useSidebar();
 </script>
 
+<Button
+	bind:ref
+	href="/"
+	variant="ghost"
+	size="icon-sm"
+	class={cn('cn-sidebar-trigger', className)}
+	aria-label="Home"
+	{...restProps}
+>
+	<HomeIcon />
+	<span class="sr-only">Home</span>
+</Button>
 
 <Button
-    bind:ref
-    href="/"
-    variant="ghost"
-    size="icon-sm"
-    class={cn("cn-sidebar-trigger", className)}
-    aria-label="Home"
-    {...restProps}
+	bind:ref
+	data-sidebar="trigger"
+	data-slot="sidebar-trigger"
+	variant="ghost"
+	size="icon-sm"
+	class={cn('cn-sidebar-trigger md:hidden', className)}
+	type="button"
+	onclick={(e) => {
+		onclick?.(e);
+		sidebar.toggle();
+	}}
+	{...restProps}
 >
-    <HomeIcon />
-    <span class="sr-only">Home</span>
+	<PanelLeftIcon />
+	<span class="sr-only">Toggle Sidebar</span>
 </Button>
