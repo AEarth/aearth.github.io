@@ -8,6 +8,7 @@
     import { ModeWatcher } from "mode-watcher";
     import ModeToggle from '$lib/components/mode-toggle.svelte';
     import { page } from '$app/state';
+    import {setContext} from 'svelte'; 
 
 
 
@@ -45,6 +46,14 @@
 $inspect(breadcrumbs?);
 $inspect(breadcrumbs[0]?.href);
 
+
+    class ActiveSectionState {
+        current = $state('');
+    }
+    const activeSection = setContext('activeSection', new ActiveSectionState());
+
+
+
 </script>
 
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
@@ -63,13 +72,13 @@ $inspect(breadcrumbs[0]?.href);
 				<Separator orientation="vertical" class="me-2 data-[orientation=vertical]:h-4" />
 				<Breadcrumb.Root>
 					<Breadcrumb.List>
-						<Breadcrumb.Item class="hidden md:block">
+						<Breadcrumb.Item>
 							<Breadcrumb.Link href="##">{breadcrumbs[0]?.label}</Breadcrumb.Link>
 						</Breadcrumb.Item>
-						{#if breadcrumbs[1]}
-							<Breadcrumb.Separator class="hidden md:block" />
+						{#if activeSection.current}
+							<Breadcrumb.Separator />
 							<Breadcrumb.Item>
-								<Breadcrumb.Page>{breadcrumbs[1]?.label}</Breadcrumb.Page>
+								<Breadcrumb.Page>{activeSection.current}</Breadcrumb.Page>
 							</Breadcrumb.Item>
 						{/if}
 					</Breadcrumb.List>
@@ -85,7 +94,7 @@ $inspect(breadcrumbs[0]?.href);
 		</div> -->
 
 		<!-- Use flex-1 to let the page content fill the remaining space -->
-		<main class="flex-1 overflow-hidden">
+		<main class="flex-1 overflow-y-auto">
 			{@render children()}
 		</main>
 	</Sidebar.Inset>
