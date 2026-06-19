@@ -9,14 +9,11 @@
 	import MapIcon from '@lucide/svelte/icons/map';
 	import Settings2Icon from '@lucide/svelte/icons/settings-2';
 	import SquareTerminalIcon from '@lucide/svelte/icons/square-terminal';
+	import CatIcon from '@lucide/svelte/icons/cat';
+	import BookCheckIcon from '@lucide/svelte/icons/book-check';
 
 	// This is sample data.
 	const data = {
-		user: {
-			name: 'shadcn',
-			email: 'm@example.com',
-			avatar: '' //jpg file
-		},
 		teams: [
 			{
 				name: 'Arthur Kay',
@@ -24,14 +21,16 @@
 				plan: 'Portfolio'
 			},
 			{
-				name: 'Acme Corp.',
-				logo: AudioWaveformIcon,
-				plan: 'Startup'
+				name: 'LinkedIn',
+				logo: BookCheckIcon,
+				plan: 'Portfolio',
+				url: 'https://www.linkedin.com/in/arthur-kay'
 			},
 			{
-				name: 'Evil Corp.',
-				logo: CommandIcon,
-				plan: 'Free'
+				name: 'GitHub',
+				logo: CatIcon,
+				plan: 'Portfolio',
+				url: 'https://github.com/aearth'
 			}
 		],
 		navMain: [
@@ -81,8 +80,7 @@
 			{
 				title: 'Resume',
 				url: '#',
-				icon: BookOpenIcon,
-
+				icon: BookOpenIcon
 			},
 			{
 				title: 'Community',
@@ -103,7 +101,7 @@
 					}
 				]
 			}
-		],
+		]
 	};
 </script>
 
@@ -130,8 +128,6 @@
 		<NavMain items={data.navMain} />
 		<NavProjects projects={data.projects} />
 	</Sidebar.Content>
-	<Sidebar.Footer>
-		<NavUser user={data.user} />
-	</Sidebar.Footer>
+
 	<Sidebar.Rail />
 </Sidebar.Root>

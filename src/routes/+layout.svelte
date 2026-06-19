@@ -73,12 +73,14 @@ $inspect(breadcrumbs[0]?.href);
 				<Breadcrumb.Root>
 					<Breadcrumb.List>
 						<Breadcrumb.Item>
-							<Breadcrumb.Link href="##">{breadcrumbs[0]?.label}</Breadcrumb.Link>
+							<Breadcrumb.Link href="#top">{breadcrumbs[0]?.label}</Breadcrumb.Link>
 						</Breadcrumb.Item>
 						{#if activeSection.current}
 							<Breadcrumb.Separator />
 							<Breadcrumb.Item>
-								<Breadcrumb.Page>{activeSection.current}</Breadcrumb.Page>
+								<Breadcrumb.Link href="{breadcrumbs[0]?.href}/#{activeSection.current}">
+									{activeSection.current}
+								</Breadcrumb.Link>
 							</Breadcrumb.Item>
 						{/if}
 					</Breadcrumb.List>
@@ -95,6 +97,7 @@ $inspect(breadcrumbs[0]?.href);
 
 		<!-- Use flex-1 to let the page content fill the remaining space -->
 		<main class="flex-1 overflow-y-auto">
+			<h1 id="top"></h1>
 			{@render children()}
 		</main>
 	</Sidebar.Inset>

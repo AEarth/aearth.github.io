@@ -10,29 +10,6 @@
 <br />
 <br />
 
-<h1>Full Stack</h1>
-
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-
 <h1 id="teramap">teramap.org</h1>
 <div id="teramap" class="section">
 	<br />
