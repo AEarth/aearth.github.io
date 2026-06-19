@@ -17,7 +17,7 @@
     // Help convert URL segment slugs to readable titles
     function formatSegment(segment: string): string {
         const mapping: Record<string, string> = {
-            'full-stack': 'Full Stack',
+            'web-dev': 'Web Dev',
             'geospatial': 'Geospatial'
         };
 
@@ -96,7 +96,7 @@ $inspect(breadcrumbs[0]?.href);
 		</div> -->
 
 		<!-- Use flex-1 to let the page content fill the remaining space -->
-		<main class="flex-1 overflow-y-auto">
+		<main class="flex-1 overflow-y-auto scroll-smooth">
 			<h1 id="top"></h1>
 			{@render children()}
 		</main>

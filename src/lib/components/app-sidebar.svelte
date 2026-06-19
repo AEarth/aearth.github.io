@@ -35,8 +35,8 @@
 		],
 		navMain: [
 			{
-				title: 'Full Stack',
-				url: '/full-stack',
+				title: 'Web Dev',
+				url: '/web-dev',
 				icon: SquareTerminalIcon,
 				isActive: false,
 				items: [
