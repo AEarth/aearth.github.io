@@ -10,14 +10,14 @@
 <div class="flex min-h-full flex-col gap-4 overflow-y-auto md:h-full md:overflow-hidden md:p-2">
 	<!-- flex-[2] makes this box take up 2 portions -->
 	<a
-		href="/full-stack"
+		href="/web-dev"
 		class="flex-2 rounded-xl bg-muted/50 ring-1 ring-transparent transition-all duration-300 hover:bg-muted/40 hover:ring-border"
 	>
 		<!-- Content Section -->
 		<div class="relative z-10 px-2 md:px-8">
 			<!-- Title -->
 			<h1 class="m-2 flex justify-start pt-2 text-xl text-muted-foreground md:text-2xl">
-				Full Stack
+				Full-Stack Web Dev
 			</h1>
 			<div class="flex flex-col items-center justify-center">
 				<div class="w-full max-w-4xl">

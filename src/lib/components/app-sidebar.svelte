@@ -36,21 +36,21 @@
 		navMain: [
 			{
 				title: 'Web Dev',
-				url: '/web-dev',
+				url: '/web-dev/#top',
 				icon: SquareTerminalIcon,
 				isActive: false,
 				items: [
 					{
 						title: 'teramap.org',
-						url: '/full-stack#teramap'
+						url: '/web-dev#teramap'
 					},
 					{
 						title: 'share-more.org',
-						url: '/full-stack#share-more'
+						url: '/web-dev#share-more'
 					},
 					{
 						title: 'stormwater',
-						url: '/full-stack#stormwater'
+						url: '/web-dev#stormwater'
 					}
 				]
 			},
