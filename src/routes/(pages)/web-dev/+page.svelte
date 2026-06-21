@@ -13,7 +13,7 @@
 </script>
 
 <header class="mt-12 mb-12 text-center">
-	<h1 class="text-4xl font-semibold tracking-tight text-foreground">Web Dev</h1>
+	<h1 class="text-4xl font-semibold tracking-tight text-foreground">WEB DEV</h1>
 	<p class="-mt-1 text-sm font-medium tracking-[0.25em] text-muted-foreground uppercase">
 		Projects
 	</p>
@@ -37,10 +37,10 @@
 				2025 — 2026
 			</header>
 			<div class="z-10 sm:col-span-6">
-				<h3 class="leading-snug font-medium text-slate-200">
+				<h3 class="leading-snug font-medium">
 					<div>
 						<a
-							class="group/link inline-flex items-baseline text-base leading-tight font-medium text-slate-200"
+							class="group/link inline-flex items-baseline text-base leading-tight font-medium"
 							href="https://www.teramap.org"
 							target="_blank"
 							rel="noreferrer noopener"
@@ -106,7 +106,7 @@
 	</div>
 
 	<!-- Teramap Hero image -->
-	<div class="my-10 w-full max-w-4xl">
+	<div class="mx-auto my-10 w-full max-w-4xl">
 		<div class="mask-y-from-95% mask-y-to-100% mask-x-from-95% mask-x-to-100%">
 			<!-- Banner Image with Overlay -->
 			<div class="relative w-full">
@@ -137,10 +137,10 @@
 				2023 — 2024
 			</header>
 			<div class="z-10 sm:col-span-6">
-				<h3 class="leading-snug font-medium text-slate-200">
+				<h3 class="leading-snug font-medium">
 					<div>
 						<a
-							class="group/link inline-flex items-baseline text-base leading-tight font-medium text-slate-200"
+							class="group/link inline-flex items-baseline text-base leading-tight font-medium"
 							href="https://www.share-more.org"
 							target="_blank"
 							rel="noreferrer noopener"
@@ -206,7 +206,7 @@
 		</div>
 	</div>
 	<!-- Teramap Hero image -->
-	<div class="my-10 w-full max-w-4xl">
+	<div class="mx-auto my-10 w-full max-w-4xl">
 		<!-- Banner Image with Overlay -->
 		<div class="w-500px relative justify-items-center">
 			<div class="mask-y-from-95% mask-y-to-100% mask-x-from-95% mask-x-to-100%">
@@ -239,10 +239,10 @@
 				2015
 			</header>
 			<div class="z-10 sm:col-span-6">
-				<h3 class="leading-snug font-medium text-slate-200">
+				<h3 class="leading-snug font-medium">
 					<div>
 						<a
-							class="group/link inline-flex items-baseline text-base leading-tight font-medium text-slate-200"
+							class="group/link inline-flex items-baseline text-base leading-tight font-medium"
 							href="https://richmondlandscape.azurewebsites.net/"
 							target="_blank"
 							rel="noreferrer noopener"
@@ -308,7 +308,7 @@
 		</div>
 	</div>
 	<!-- Teramap Hero image -->
-	<div class="my-10 w-full max-w-4xl">
+	<div class="mx-auto my-10 w-full max-w-4xl">
 		<div class="mask-y-from-95% mask-y-to-100% mask-x-from-95% mask-x-to-100%">
 			<!-- Banner Image with Overlay -->
 			<div class="relative w-full">
