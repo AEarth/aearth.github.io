@@ -7,6 +7,7 @@
 	import { Badge } from '$lib/components/ui/badge';
 	import Teramap2 from '$lib/assets/images/teramap-2.png';
 	import Sharemore from '$lib/assets/images/share-more.png';
+	import Stormwater from '$lib/assets/images/stormwater.png';
 
 	let { message, user, timestamp } = $props();
 </script>
@@ -219,9 +220,12 @@
 	</div>
 </div>
 
-<div id="stormwater" class="section mt-12 p-4 transition-all hover:bg-muted/20 hover:ring-border">
+<div
+	id="landcover-stormwater"
+	class="section mt-12 p-4 transition-all hover:bg-muted/20 hover:ring-border"
+>
 	<h2 class="mb-2 flex items-center gap-2 text-xl font-medium tracking-tight text-foreground">
-		stormwater
+		Richmond Landcover & Stormwater
 	</h2>
 	<div>
 		<div class="group relative grid pb-1 sm:grid-cols-8 sm:gap-8 md:gap-4">
@@ -232,21 +236,21 @@
 				class="z-10 mt-1 mb-2 text-xs font-semibold tracking-wide text-slate-500 uppercase sm:col-span-2"
 				aria-label="2025 — 2026"
 			>
-				2023 — 2024
+				2015
 			</header>
 			<div class="z-10 sm:col-span-6">
 				<h3 class="leading-snug font-medium text-slate-200">
 					<div>
 						<a
 							class="group/link inline-flex items-baseline text-base leading-tight font-medium text-slate-200"
-							href="https://www.share-more.org"
+							href="https://richmondlandscape.azurewebsites.net/"
 							target="_blank"
 							rel="noreferrer noopener"
 							aria-label="Senior Frontend Engineer, Accessibility at Klaviyo (opens in a new tab)"
 							><span
 								class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"
 							></span><span
-								>Full Stack Web Application ·<!-- -->
+								>Custom Web Mapping Application ·<!-- -->
 								<span class="inline-block"
 									>Visit<svg
 										xmlns="http://www.w3.org/2000/svg"
@@ -266,10 +270,10 @@
 					</div>
 				</h3>
 				<p class="mt-2 text-sm leading-normal">
-					Mobile first designed tool lending library that includes user profiles, FSM workflow
-					around a user-to-user decentralized system for requesting and accepting tool rentals, and
-					an in-app bell notification system. More recent additions includes items generating unique
-					QR code to support real-world validation.
+					Developed a custom tile basemap with QGIS utilizing over 17 layers including 1m land
+					cover, transportation, and property data. It is a visually appealing tool for homeowners,
+					environmental, and stormwater planners for the city of Richmond to estimate out the
+					stormwater runoff and nutrient loads of properties in Richmond.
 				</p>
 			</div>
 		</div>
@@ -281,26 +285,40 @@
 		<div class="col-span-2">
 			<span class="inline-flex items-center gap-2">
 				<Database class="size-7 text-muted-foreground" />
-				PostgreSQL
+				Carto
 			</span>
 		</div>
 		<div class="col-span-2">
 			<span class="inline-flex items-center gap-2">
 				<Code class="size-7 text-muted-foreground" />
-				Python/Django
+				HTML/CSS
 			</span>
 		</div>
 		<div class="col-span-2">
 			<span class="inline-flex items-center gap-2">
 				<MousePointerClick class="size-7 text-muted-foreground" />
-				HTMX/AlpineJS
+				Vanilla JS
 			</span>
 		</div>
 		<div class="col-span-2">
 			<span class="inline-flex items-center gap-2">
 				<Ship class="size-7 text-muted-foreground" />
-				Heroku
+				AWS S3
 			</span>
+		</div>
+	</div>
+	<!-- Teramap Hero image -->
+	<div class="my-10 w-full max-w-4xl">
+		<div class="mask-y-from-95% mask-y-to-100% mask-x-from-95% mask-x-to-100%">
+			<!-- Banner Image with Overlay -->
+			<div class="relative w-full">
+				<img
+					src={Stormwater}
+					alt="Stormwater"
+					class="h-48 w-full object-cover transition-transform duration-500 group-hover:scale-101 md:h-64"
+				/>
+				<div class="absolute inset-0 bg-linear-to-t from-card via-transparent to-transparent"></div>
+			</div>
 		</div>
 	</div>
 </div>

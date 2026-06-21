@@ -1,12 +1,13 @@
 <script lang="ts">
-	import * as Collapsible from "$lib/components/ui/collapsible/index.js";
-	import * as Sidebar from "$lib/components/ui/sidebar/index.js";
-	import ChevronRightIcon from "@lucide/svelte/icons/chevron-right";
+	import * as Collapsible from '$lib/components/ui/collapsible/index.js';
+	import * as Sidebar from '$lib/components/ui/sidebar/index.js';
+	import ChevronRightIcon from '@lucide/svelte/icons/chevron-right';
+	import { Plus } from '@lucide/svelte';
+
 	import { resolve } from '$app/paths';
 
-
 	let {
-		items,
+		items
 	}: {
 		items: {
 			title: string;
@@ -24,7 +25,7 @@
 </script>
 
 <Sidebar.Group>
-	<Sidebar.GroupLabel>Platform</Sidebar.GroupLabel>
+	<Sidebar.GroupLabel>My Work</Sidebar.GroupLabel>
 	<Sidebar.Menu>
 		{#each items as item (item.title)}
 			<Collapsible.Root open={item.isActive} class="group/collapsible">
@@ -37,8 +38,8 @@
 										<item.icon />
 									{/if}
 									<span><a href={item.url}>{item.title}</a></span>
-									<ChevronRightIcon
-										class="ms-auto transition-transform duration-200 group-data-[state=open]/collapsible:rotate-90"
+									<Plus
+										class="ms-auto cursor-pointer transition-transform duration-200 group-data-[state=open]/collapsible:rotate-90"
 									/>
 								</Sidebar.MenuButton>
 							{/snippet}
