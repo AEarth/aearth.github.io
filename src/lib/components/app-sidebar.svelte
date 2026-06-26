@@ -49,7 +49,7 @@
 						url: '/web-dev#share-more'
 					},
 					{
-						title: 'landcover-stormwater',
+						title: 'Landcover / Stormwater',
 						url: '/web-dev#landcover-stormwater'
 					}
 				]
@@ -61,15 +61,15 @@
 				items: [
 					{
 						title: 'Watershed Characterization Tool',
-						url: '/geospatial'
+						url: '/geospatial/#WCT'
 					},
 					{
 						title: 'Enhanced Floodplain Maps',
-						url: '#'
+						url: '/geospatial/#SWVA'
 					},
 					{
-						title: 'VA Flood Risk Info System',
-						url: '#'
+						title: 'Flood Modeling',
+						url: '/geospatial/#flood-modeling'
 					},
 					{
 						title: 'Coastal Resilience Web Explorer',

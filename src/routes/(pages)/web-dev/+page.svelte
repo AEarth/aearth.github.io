@@ -2,6 +2,7 @@
 	import { base } from '$app/paths';
 
 	import { Button } from '$lib/components/ui/button';
+	import { Card } from '$lib/components/ui/Card';
 
 	import { Map, Database, Code, MousePointerClick, Ship } from '@lucide/svelte';
 	import { Badge } from '$lib/components/ui/badge';
@@ -19,7 +20,7 @@
 	</p>
 </header>
 
-<div id="teramap" class="section p-4 transition-all hover:bg-muted/20 hover:ring-border">
+<Card id="teramap" class="section m-4 bg-card/60 p-4">
 	<h2 class="mb-2 flex items-center gap-2 text-xl font-medium tracking-tight text-foreground">
 		teramap.org
 	</h2>
@@ -119,9 +120,9 @@
 			</div>
 		</div>
 	</div>
-</div>
+</Card>
 
-<div id="share-more" class="section mt-12 p-4 transition-all hover:bg-muted/20 hover:ring-border">
+<Card id="share-more" class="section m-4 bg-card/60 p-4">
 	<h2 class="mb-2 flex items-center gap-2 text-xl font-medium tracking-tight text-foreground">
 		share-more.org
 	</h2>
@@ -218,12 +219,9 @@
 			</div>
 		</div>
 	</div>
-</div>
+</Card>
 
-<div
-	id="landcover-stormwater"
-	class="section mt-12 p-4 transition-all hover:bg-muted/20 hover:ring-border"
->
+<Card id="landcover-stormwater" class="section m-4 bg-card/60 p-4">
 	<h2 class="mb-2 flex items-center gap-2 text-xl font-medium tracking-tight text-foreground">
 		Richmond Landcover & Stormwater
 	</h2>
@@ -321,4 +319,4 @@
 			</div>
 		</div>
 	</div>
-</div>
+</Card>

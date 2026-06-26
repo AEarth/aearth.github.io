@@ -66,7 +66,7 @@ $inspect(breadcrumbs[0]?.href);
 	<!-- Added flex, flex-col, and h-screen to fill the viewport -->
 	<Sidebar.Inset class="flex h-screen flex-col overflow-hidden">
 		<header
-			class="sticky top-0 z-30 flex h-12 shrink-0 items-center justify-between gap-2 bg-card/60 px-4 transition-[width,height] ease-linear group-has-data-[collapsible=icon]/sidebar-wrapper:h-12"
+			class="sticky top-0 z-30 flex h-12 shrink-0 items-center justify-between gap-2 border-b-1 bg-card/60 px-4 shadow-lg transition-[width,height] ease-linear group-has-data-[collapsible=icon]/sidebar-wrapper:h-12"
 		>
 			<div class="flex items-center gap-2">
 				<Sidebar.Trigger class="-ms-1" />
@@ -98,7 +98,7 @@ $inspect(breadcrumbs[0]?.href);
 
 		<!-- Use flex-1 to let the page content fill the remaining space -->
 		<main class="flex-1 overflow-y-auto scroll-smooth">
-			<h1 id="top"> </h1>
+			<h1 id="top"></h1>
 			{@render children()}
 		</main>
 	</Sidebar.Inset>
