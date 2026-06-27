@@ -2,7 +2,7 @@
 	import { base } from '$app/paths';
 
 	import { Button } from '$lib/components/ui/button';
-	import { Card } from '$lib/components/ui/Card';
+	import { Card } from '$lib/components/ui/card';
 
 	import { Map, Database, Code, MousePointerClick, Ship } from '@lucide/svelte';
 	import { Badge } from '$lib/components/ui/badge';
