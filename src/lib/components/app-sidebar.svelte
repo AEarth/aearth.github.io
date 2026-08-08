@@ -7,6 +7,7 @@
 	import FrameIcon from '@lucide/svelte/icons/frame';
 	import GalleryVerticalEndIcon from '@lucide/svelte/icons/gallery-vertical-end';
 	import MapIcon from '@lucide/svelte/icons/map';
+	import MapPlusIcon from '@lucide/svelte/icons/map-plus';
 	import Settings2Icon from '@lucide/svelte/icons/settings-2';
 	import SquareTerminalIcon from '@lucide/svelte/icons/square-terminal';
 	import CatIcon from '@lucide/svelte/icons/cat';
@@ -57,7 +58,7 @@
 			{
 				title: 'Geospatial',
 				url: '/geospatial',
-				icon: BotIcon,
+				icon: MapPlusIcon,
 				items: [
 					{
 						title: 'Watershed Characterization Tool',
@@ -78,7 +79,7 @@
 				]
 			},
 			{
-				title: 'Resume',
+				title: 'Landscape',
 				url: '#',
 				icon: BookOpenIcon
 			},

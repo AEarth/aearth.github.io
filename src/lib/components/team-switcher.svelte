@@ -2,7 +2,7 @@
 	import * as DropdownMenu from '$lib/components/ui/dropdown-menu/index.js';
 	import * as Sidebar from '$lib/components/ui/sidebar/index.js';
 	import { useSidebar } from '$lib/components/ui/sidebar/index.js';
-	import ChevronsUpDownIcon from '@lucide/svelte/icons/chevrons-up-down';
+	import LinkIcon from '@lucide/svelte/icons/link';
 	import PlusIcon from '@lucide/svelte/icons/plus';
 
 	// This should be `Component` after @lucide/svelte updates types
@@ -35,7 +35,7 @@
 							</span>
 							<span class="truncate text-xs">{activeTeam.plan}</span>
 						</div>
-						<ChevronsUpDownIcon class="ms-auto" />
+						<LinkIcon class="ms-auto" />
 					</Sidebar.MenuButton>
 				{/snippet}
 			</DropdownMenu.Trigger>
