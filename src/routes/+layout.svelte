@@ -98,7 +98,7 @@ $inspect(breadcrumbs[0]?.href);
 
 		<!-- Use flex-1 to let the page content fill the remaining space -->
 		<main class="flex-1 overflow-y-auto scroll-smooth">
-			<h1 id="top"></h1>
+			<h1 id="top"> </h1>
 			{@render children()}
 		</main>
 	</Sidebar.Inset>

@@ -145,7 +145,6 @@
 							href="https://www.share-more.org"
 							target="_blank"
 							rel="noreferrer noopener"
-							aria-label="Senior Frontend Engineer, Accessibility at Klaviyo (opens in a new tab)"
 							><span
 								class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"
 							></span><span
@@ -244,7 +243,6 @@
 							href="https://richmondlandscape.azurewebsites.net/"
 							target="_blank"
 							rel="noreferrer noopener"
-							aria-label="Senior Frontend Engineer, Accessibility at Klaviyo (opens in a new tab)"
 							><span
 								class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"
 							></span><span
