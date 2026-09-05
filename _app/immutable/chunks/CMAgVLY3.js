@@ -1,0 +1,1 @@
+var e=``+new URL(`../assets/carverponics.BOMU8XWB.png`,import.meta.url).href;export{e as t};
